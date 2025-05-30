@@ -49,8 +49,8 @@ app.get('/api/matches', async (req, res) => {
     }
 });
 
+const PORT = process.env.PORT || 10000;
 
-const PORT=process.env.PORT
 
 try {
     app.listen(PORT, () => {

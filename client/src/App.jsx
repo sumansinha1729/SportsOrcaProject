@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const res = await fetch('http://localhost:3002/api/matches');
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/matches`);
         const data = await res.json();
 
         if (res.ok) {
