@@ -50,9 +50,7 @@ app.get('/api/matches', async (req, res) => {
 });
 
 
-
-
-const PORT = 3002;
+const PORT=process.env.PORT
 
 try {
     app.listen(PORT, () => {
