@@ -15,7 +15,7 @@ app.get('/api/matches', async (req, res) => {
                 'x-apisports-key': process.env.BASKETBALL_API_KEY
             },
             params: {
-                date: '2025-05-30',
+                date: '2025-06-08',
             }
         });
 
